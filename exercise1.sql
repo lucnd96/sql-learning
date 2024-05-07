@@ -71,6 +71,7 @@ order by Price
 limit 1;
 -- 1.16 Select the name of each manufacturer along with the name and price of its most expensive product.
 # Solution 1: using window function
+EXPLAIN ANALYZE
 select *
 from (select M.Name                                                  as Manufacturer_Name,
              P.Name                                                  as Procduct_Name,
